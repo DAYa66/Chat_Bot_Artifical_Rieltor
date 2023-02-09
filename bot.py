@@ -79,7 +79,6 @@ def main():
     my_bot.idle() # бот будет работать пока его не остановят
 
 if __name__ == "__main__":
-    db = Database('sqlite:///gb_blog.db')
     try:
         main()
     except requests.exceptions.ConnectionError:
